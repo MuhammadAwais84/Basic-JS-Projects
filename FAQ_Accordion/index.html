@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Accordion</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Main FAQ Accordion Container -->
+    <div class="main">
+
+      <!-- FAQ 1: What is the DOM in JavaScript? -->
+      <div class="box1 box">
+        <div class="question">
+          <h1>What is the DOM in JavaScript?</h1>
+          <button>+</button>
+        </div>
+        <div class="answer">
+          <p>
+            DOM stands for Document Object Model. It represents the structure of
+            an HTML or XML document as a tree of objects that JavaScript can
+            manipulate. You can use it to change text, HTML, styles, and even add
+            or remove elements.
+          </p>
+        </div>
+      </div>
+      <!-- End FAQ 1 -->
+
+      <!-- FAQ 2: How can you select an element by its class name in JavaScript? -->
+      <div class="box2 box">
+        <div class="question">
+          <h1>
+            How can you select an element by its cla
+                const element = document.querySelector('.my-class'); // returns the first matching elementss name in JavaScript?
+          </h1>
+          <button>+</button>
+        </div>
+        <div class="answer">
+          <p>
+            You can use document.querySelector() or
+             document.getElementsByClassName()
+          </p>
+          <span>Example:-</span>
+          <pre>
+            <code>
+const element = document.querySelector('.my-class'); // returns the first matching element
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- End FAQ 2 -->
+
+      <!-- FAQ 3: How do you add a click event to a button in JavaScript? -->
+      <div class="box3 box">
+        <div class="question">
+          <h1>How do you add a click event to a button in JavaScript?</h1>
+          <button>+</button>
+        </div>
+        <div class="answer">
+            <span>Exmaple</span>
+          <pre>
+            <code>
+const button = document.querySelector('button');
+button.addEventListener('click', function() {
+alert('Button clicked!');
+ });
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- End FAQ 3 -->
+
+    </div>
+    <!-- End Main FAQ Accordion Container -->
+   
+    <script src="script.js"></script>
+     <!-- JavaScript for FAQ Accordion functionality -->
+  </body>
+</html>
