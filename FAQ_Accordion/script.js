@@ -1,4 +1,5 @@
 let btn=document.querySelectorAll('.question button');
+let answers=document.querySelectorAll('.answer');
 document.addEventListener("DOMContentLoaded", function() {
     // Initially hide all answers
     for (let answer of answers) {
